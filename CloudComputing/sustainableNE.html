@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Styles/weather.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Scripts/relTime.js"></script>
+    <script src="Scripts/tweets.js"></script>
+    <script src="Scripts/weather.js"></script>
+    <script src="Scripts/map.js"></script>
+    <title>Sustainable North East</title>
+  </head>
+
+  <body>
+    <main>
+      <div id="container">
+        <div id="intro">
+          <h1>Sustainable North East</h1>
+          <p>
+            We bring you data and information on sustaiability all over the
+            North East! See what others are talking about right now.
+          </p>
+        </div>
+
+        <div id="forecast">
+          <h3>
+            Hows the weather here? (Current weather at our HQ displayed by
+            default)
+          </h3>
+          <p>
+            Closest weather station: <span id="location"></span> - Temperature:
+            <span id="temp"></span> Clouds: <span id="clouds"></span> Humidity:
+            <span id="humidity"></span> Windspeed: <span id="windspeed"></span>
+          </p>
+        </div>
+
+        <div id="map"></div>
+
+        <div id="distance-info">
+          <h3>How far from our HQ?</h3>
+          <div id="distanceBox">
+            <p>Click a marker to get distance details</p>
+          </div>
+        </div>
+
+        <div id="directionsArea">
+          <h3>Directions to our HQ</h3>
+          <div id="directionsPanel">
+            <p>Click a marker to get directions</p>
+          </div>
+        </div>
+
+        <div id="tweets">
+          <h2>Latest Tweets</h2>
+
+          <div id="tweet-list">
+            <p>
+              Join in by tweeting about sustainability!<a
+                class="twitter-share-button"
+                href="https://twitter.com/intent/tweet?text=Get%20talking%20about%20sustainability%21&hashtags=ClimateChange%2CNetZero"
+                data-size="large"
+              >
+                Tweet</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <footer>
+    <div class="footer">
+      <div>
+        <p>© 2022 SNE Limited</p>
+      </div>
+      <div>
+        <p>Website owned and created by Jacob Clark</p>
+      </div>
+      <div>
+        <p>
+          For more information contact:
+          <a href="mailto:w18003237@northumbria.ac.uk">
+            w18003237@northumbria.ac.uk</a
+          >
+        </p>
+      </div>
+      <div>
+        <p>
+          <a href="http://20.25.59.57/part2/about.html">About Page</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAJ2qnnuC0KhC7tpvBOrfDqCZRca1v2UtE"
+    async
+    defer
+  ></script>
+</html>

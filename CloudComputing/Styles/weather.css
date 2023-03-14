@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #212121;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 100%;
+  background-color: lightgray;
+}
+
+#container {
+  margin-bottom: 200px;
+  padding-bottom: 120px;
+  min-height: 100%;
+  position: relative;
+  margin: 1%;
+  display: grid;
+  grid-gap: 1%;
+  grid-auto-rows: min-content;
+  grid-template-columns: 0.1fr 1.5fr 2.3fr 0.1fr;
+  grid-template-areas:
+    ". intro intro ."
+    ". tweets map ."
+    ". tweets forecast ."
+    ". tweets distanceResults ."
+    ". tweets directions .";
+}
+
+.twitter-share-button {
+  text-align: center;
+}
+
+#conatinerAbout {
+  margin-bottom: 200px;
+  padding-bottom: 120px;
+  min-height: 100%;
+  position: relative;
+  margin: 1%;
+  display: grid;
+  grid-gap: 1%;
+  grid-auto-rows: min-content;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-areas:
+    ". intro1 ."
+    ". images ."
+    ". code  .";
+}
+
+#intro1 {
+  grid-area: intro1;
+}
+
+#images {
+  grid-area: images;
+}
+
+#code {
+  grid-area: code;
+}
+
+#map {
+  height: 350px;
+  padding-bottom: 150px;
+  grid-area: map;
+}
+#directionsArea {
+  grid-area: directions;
+}
+
+#directionsPanel {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+#intro {
+  grid-area: intro;
+}
+
+#forecast {
+  grid-area: forecast;
+}
+
+#distance-info {
+  grid-area: distanceResults;
+}
+
+#tweets {
+  grid-area: tweets;
+  background-color: #1da1f2;
+}
+
+#tweets h2 {
+  color: white;
+}
+
+#tweet-list {
+  overflow-y: scroll;
+  height: 800px;
+  background-color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* Some CSS for embedded tweets adapted from the twitter dev page: https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/css-for-embedded-tweets*/
+.tweetos {
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  max-width: 468px;
+}
+
+.tweetos p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+footer {
+  background-color: #333;
+  width: 100%;
+  overflow: hidden;
+  height: 120px;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  float: left;
+  margin-left: -1px;
+}
+
+/* style footer text*/
+
+.footer p {
+  float: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 2% 4%;
+  border-left: 1px solid black;
+  font-size: 12px;
+}
+
+.footer a:visited {
+  color: white;
+}
